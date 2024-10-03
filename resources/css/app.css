@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+/* Cambiar el color de fondo de los botones de la izquierda (Hoy, Anterior, Siguiente) */
+.fc-toolbar .fc-button.fc-prev,
+.fc-toolbar .fc-button.fc-next,
+.fc-toolbar .fc-button.fc-today {
+  background-color: #FFB300 !important; /* Ámbar oscuro */
+  color: #ffffff !important;            /* Texto blanco */
+  border: none !important;              /* Eliminar borde */
+}
+
+/* Cambiar el color de los botones de la izquierda cuando están en hover */
+.fc-toolbar .fc-button.fc-prev:hover,
+.fc-toolbar .fc-button.fc-next:hover,
+.fc-toolbar .fc-button.fc-today:hover {
+  background-color: #FF8F00 !important; /* Ámbar un poco más oscuro en hover */
+  color: #ffffff !important;            /* Texto blanco */
+}
+
+/* Cambiar el color del botón de la izquierda cuando está activo */
+.fc-toolbar .fc-button.fc-prev.fc-button-active,
+.fc-toolbar .fc-button.fc-next.fc-button-active,
+.fc-toolbar .fc-button.fc-today.fc-button-active {
+  background-color: #FF6F00 !important; /* Ámbar aún más oscuro cuando el botón está activo */
+  color: #ffffff !important;            /* Texto blanco */
+}
